@@ -128,7 +128,6 @@ export default function ClientCard(props) {
       </React.Fragment>
     );
   } else if (currentStatus == "declined") {
-    console.log(currentStatus);
     colourStatusClass = classes.colourRed;
   } else if (currentStatus == "approved") {
     colourStatusClass = classes.colourGreen;
