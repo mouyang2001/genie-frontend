@@ -137,7 +137,9 @@ export default function DashboardPage() {
   // Load business settings from server
   useEffect(() => {
 
-    fetch('/api/settings', {method: 'GET'}).then(async (res) => {
+    fetch("https://genie-app-backend.herokuapp.com/api/settings", {
+      method: "GET",
+    }).then(async (res) => {
       let resObj = await res.json();
 
       setObjectId(resObj._id);
@@ -155,7 +157,9 @@ export default function DashboardPage() {
   useEffect(() => {
     setCurrentStatus([]);
     const fetchCurrent = async () => {
-      fetch('/api/clients/current').then(async (res) => {
+      fetch(
+        "https://genie-app-backend.herokuapp.com/api/clients/current"
+      ).then(async (res) => {
         let resObj = await res.json();
 
         setCurrentStatus(resObj);
@@ -172,10 +176,12 @@ export default function DashboardPage() {
 
 
     const fetchClients = () => {
-      fetch('/api/clients').then(async (res) => {
-        let resObj = await res.json();
-        setClientItems(resObj);
-      });
+      fetch("https://genie-app-backend.herokuapp.com/api/clients").then(
+        async (res) => {
+          let resObj = await res.json();
+          setClientItems(resObj);
+        }
+      );
     };
 
     fetchClients();
@@ -211,7 +217,7 @@ export default function DashboardPage() {
       body: JSON.stringify(resObj)
     }
 
-    fetch('/api/settings', reqOptions);
+    fetch("https://genie-app-backend.herokuapp.com/api/settings", reqOptions);
 
     setSettingsOpen(0);
   }

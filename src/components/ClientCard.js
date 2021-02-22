@@ -104,7 +104,7 @@ export default function ClientCard(props) {
       body: JSON.stringify(resObj),
     };
 
-    fetch('api/approval', reqOptions);
+    fetch("https://genie-app-backend.herokuapp.com/api/approval", reqOptions);
 
   }, [currentStatus, currentArchive]);
 

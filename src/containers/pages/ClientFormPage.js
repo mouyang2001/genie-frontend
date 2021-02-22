@@ -108,7 +108,10 @@ export default function ClientFormPage() {
     }
 
 
-    fetch('/api/inputs/form-aibot', reqOptions).then(async (res) => {
+    fetch(
+      "https://genie-app-backend.herokuapp.com/api/inputs/form-aibot",
+      reqOptions
+    ).then(async (res) => {
       const data = await res.json();
 
       if (data.statusCode) return true;
@@ -116,7 +119,7 @@ export default function ClientFormPage() {
       setEntities(data.entities);
       setKeywords(data.keywords);
       setExpandResult(true);
-    })
+    });
   };
   return (
     <Box className={classes.root}>
