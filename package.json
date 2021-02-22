@@ -16,7 +16,7 @@
     "react-scripts": "4.0.2",
     "web-vitals": "^1.0.1"
   },
-  "proxy": "http://localhost:9000",
+  "proxy": "https://genie-app-backend.herokuapp.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
