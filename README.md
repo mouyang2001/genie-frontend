@@ -1,5 +1,6 @@
 # genie-frontend
 Frontend web application for demonstrating Genie software features.
+Link to backend repo: https://github.com/mouyang2001/genie-backend
 
 # Link
 https://genie-app-digital.herokuapp.com
