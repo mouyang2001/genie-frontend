@@ -10,3 +10,6 @@ Side Note: This repo was split from the original repo: https://github.com/Ray-F/
 
 # Technologies
 React js & Material ui. Hosted on Heroku.
+
+# Link
+https://genie-app-digital.herokuapp.com
