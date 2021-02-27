@@ -1,6 +1,9 @@
 # genie-frontend
 Frontend web application for demonstrating Genie software features.
 
+# Link
+https://genie-app-digital.herokuapp.com
+
 # About
 Genie is a concept software package that provides automated lead generation and client managment. It leverages AI technologies to help small businesses manage client requests and provide optimized quotes for potential customers based on their input data. 
 
@@ -11,5 +14,3 @@ Side Note: This repo was split from the original repo: https://github.com/Ray-F/
 # Technologies
 React js & Material ui. Hosted on Heroku.
 
-# Link
-https://genie-app-digital.herokuapp.com
