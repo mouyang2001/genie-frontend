@@ -76,9 +76,9 @@ export default function Conversation(props) {
           <Grid container>
             <Grid item xs={12}>
               {clientChat.map((chatMessage, index) => {
-                let sender = (chatMessage.sender == "client") ? props.client.name : "Genie";
+                let sender = (chatMessage.sender === "client") ? props.client.name : "Genie";
 
-                let toClass = (chatMessage.sender == "client") ? classes.chatClient : classes.chatMe;
+                let toClass = (chatMessage.sender === "client") ? classes.chatClient : classes.chatMe;
 
                 return (
                   <Paper key={index} className={`${classes.chatContainer} ${toClass}`} elevation={0}>

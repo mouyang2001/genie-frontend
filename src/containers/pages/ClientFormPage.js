@@ -97,7 +97,7 @@ export default function ClientFormPage() {
       })
     }
 
-    if (text == '') {
+    if (text === '') {
       setPopupMessage('Enter some text!')
       setPopup(1);
 

@@ -321,7 +321,7 @@ export default function DashboardPage() {
             <Grid container className={classes.clientContainer}>
               <Grid item xs={12} className={`${classes.sideCard} ${classes.statusIndicator}`}>
                 <Typography variant='h5' display='inline'>{currentStatus.length} </Typography>
-                <Typography variant='body2' display='inline'>Recent Conversation{currentStatus.length == 1 ? '' : 's'}</Typography>
+                <Typography variant='body2' display='inline'>Recent Conversation{currentStatus.length === 1 ? '' : 's'}</Typography>
               </Grid>
 
               {currentStatus.map((client, index) => {

@@ -95,7 +95,7 @@ export default function ClientCard(props) {
     let resObj = {
       object_id: props.item._id,
       status: currentStatus,
-      archived: currentArchive
+      archived: currentArchive,
     };
 
     const reqOptions = {
@@ -105,13 +105,13 @@ export default function ClientCard(props) {
     };
 
     fetch("https://genie-app-backend.herokuapp.com/api/approval", reqOptions);
-
+    // eslint-disable-next-line
   }, [currentStatus, currentArchive]);
 
   let approvalDom;
   let colourStatusClass;
 
-  if (currentStatus == "pending") {
+  if (currentStatus === "pending") {
     approvalDom = (
       <React.Fragment>
         <Tooltip title="Approve">
@@ -127,9 +127,9 @@ export default function ClientCard(props) {
         </Tooltip>
       </React.Fragment>
     );
-  } else if (currentStatus == "declined") {
+  } else if (currentStatus === "declined") {
     colourStatusClass = classes.colourRed;
-  } else if (currentStatus == "approved") {
+  } else if (currentStatus === "approved") {
     colourStatusClass = classes.colourGreen;
   }
 
